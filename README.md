@@ -172,6 +172,7 @@
 <p/>
 
 # Important that path names is the same as the folder name that was created
+# Create the rule and add it
 
 <p align="center">
   
@@ -180,4 +181,34 @@
 <p/>
 
 
+# Test it out by accessing the front-end IP of the application gateway 
+- Remember to use the public IP of each VM and use the path names 
+- Enter the public IP address of appvm1 / folder name / page name with .html 
+- Here users can see the application gateway working as it directs traffic
 
+# Front-end IP of app gateway
+- IP is what users will access: 20.211.173.158
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169747592-c7ccb252-70a3-4446-b5c5-3763b4c78b9c.png" height="100%" width="100%" alt="application gateway"/>
+
+<p/>
+
+# Image server
+- http://20.211.173.158/images/image.html
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169747883-0d048f28-a5b5-44e3-87a9-6b4ff1225c5b.png" height="100%" width="100%" alt="application gateway"/>
+
+<p/>
+
+
+# Video server
+- http://20.211.173.158/videos/video.html
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169747920-f7272be8-1f6f-4c34-a19f-3b926b88c474.png" height="100%" width="100%" alt="application gateway"/>
+
+<p/>
