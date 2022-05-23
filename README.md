@@ -1,9 +1,7 @@
 # Azure-Application-Gateway-Service
 
 # What is the purpose of Application Gateway Service?
-- Service that load balances traffic at the OSI Layer 7 Application layer
-- When deploying an application gateway service, admins must have an empty subnet. 
-- It will be deployed on a virtual network.
+- App gateway is a web traffic load balances service that load balances traffic at the OSI Layer 7 Application layer
 - Azure application gateway routes the traffic/request based on the URL.
 - Application gateway managed SSL for users. 
 - Communicaton from client to the app gateway is secure because of SSL
