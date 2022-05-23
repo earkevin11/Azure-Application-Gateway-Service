@@ -63,11 +63,119 @@
 
 <p/>
 
-- Create html page 
+- Create html page for image server
+- Users will have to open up notebad and add html code 
+- Save it has a webpage by selecting UTF-8 and all documents
 
 <p align="center">
   
-<img src="https://user-images.githubusercontent.com/104326475/169736408-6539d5b6-1916-4e7d-8483-d895b58b97f2.png" height="90%" width="90%" alt="application gateway"/>
+<img src="https://user-images.githubusercontent.com/104326475/169743328-85b2e0b3-42e9-42af-8fc3-5dc6b7af925b.png" height="90%" width="90%" alt="application gateway"/>
+
+<p/>
+
+
+- Create html page for video server
+- Users will have to open up notebad and add html code 
+- Save it has a webpage by selecting UTF-8 and all documents
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169743396-a6999e61-7775-4de6-8529-e3a24710dbf1.png" height="90%" width="90%" alt="application gateway"/>
+
+<p/>
+
+- Enter the public IP address of appvm1 / folder name / page name with .html 
+- This page should show up
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169743837-dcd9a672-c468-476a-8cfd-2ea9c1b87197.png" height="90%" width="90%" alt="application gateway"/>
+
+<p/>
+
+
+- Enter the public IP address of appvm2 / folder name / page name with .html 
+- This page should show up
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169743894-cab3095c-76b1-474b-8273-b849b3f73373.png" height="90%" width="90%" alt="application gateway"/>
+
+<p/>
+
+
+# How to implement Application Gateways?
+- Add an empty subnet for the application gateway instances
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169744174-23f388d0-7833-496d-9622-85bdf8368ee3.png" height="190%" width="190%" alt="application gateway"/>
+
+<p/>
+
+
+- Create the application gateway and add into the empty subnet that was created
+- Remember, that application gateway intances need an empty subnet.
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169745089-5dc8411b-e371-4c29-a084-6984e32ef769.png" height="190%" width="190%" alt="application gateway"/>
+
+<p/>
+
+- Add a public IP
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169745136-aef57a42-f015-4364-9948-2df185472453.png
+" height="190%" width="190%" alt="application gateway"/>
+
+<p/>
+
+
+- Add backend pools of imagespool 
+- Configure image pool to link with appvm1 
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169745183-1f2fd79d-3c89-4607-956f-1479e7830c65.png" height="300%" width="300%" alt="application gateway"/>
+
+<p/>
+
+- Add backend pools videospool
+- Configure video pool to link with appvm2 since that is where the video server is 
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169745254-0dcebef8-18ea-4c99-ae2e-ae06ea7d927c.png" height="300%" width="300%" alt="application gateway"/>
+
+<p/>
+
+
+- Add routing rules
+- These rules will direct frontends to backends.
+
+
+# Backend targets
+- Set a rule name and priority
+- Select backendpool
+- Use the default backend settings
+- Users will need to add path based rules
+
+
+# Important that path names is the same as the folder name that was created
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169746630-6f5a5eb9-f626-4705-8aea-78b952b5297e.png" height="100%" width="100%" alt="application gateway"/>
+
+<p/>
+
+# Important that path names is the same as the folder name that was created
+
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/169746681-1809657d-5ef4-49f0-b473-dc6625b94d3d.png" height="100%" width="100%" alt="application gateway"/>
 
 <p/>
 
