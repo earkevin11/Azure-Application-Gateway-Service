@@ -125,8 +125,7 @@
 
 <p align="center">
   
-<img src="https://user-images.githubusercontent.com/104326475/169745136-aef57a42-f015-4364-9948-2df185472453.png
-" height="190%" width="190%" alt="application gateway"/>
+<img src="https://user-images.githubusercontent.com/104326475/169745136-aef57a42-f015-4364-9948-2df185472453.png" height="190%" width="190%" alt="application gateway"/>
 
 <p/>
 
