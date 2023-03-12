@@ -11,6 +11,13 @@
 # How would users access the Azure Application Gateway?
 - There is a frontend IP address where users will use
 
+<p align="center">
+  
+<img src="https://user-images.githubusercontent.com/104326475/224524566-970386ee-b6f0-4fab-b390-d12e2a21d6d6.png" height="100%" width="100%" alt="application gateway"/>
+
+<p/>
+
+
 # An EMPTY subnet will need to be created for the Application Gateway machines.
 - These application gateway machines will be in charge of routing traffic to the machines in the backend pool.
 - Users will not be able to create an application gateway within a used subnet. It must be empty.
